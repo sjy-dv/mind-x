@@ -1,0 +1,10 @@
+c:\Users\WIN10\Desktop\mind-x\mvd\target\debug\deps\libcrc32fast-ac405bcd287b643f.rmeta: C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\lib.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\baseline.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\combine.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\specialized\mod.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\table.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\specialized\pclmulqdq.rs
+
+c:\Users\WIN10\Desktop\mind-x\mvd\target\debug\deps\crc32fast-ac405bcd287b643f.d: C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\lib.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\baseline.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\combine.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\specialized\mod.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\table.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\specialized\pclmulqdq.rs
+
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\lib.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\baseline.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\combine.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\specialized\mod.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\table.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\crc32fast-1.4.0\src\specialized\pclmulqdq.rs:

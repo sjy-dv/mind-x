@@ -1,0 +1,10 @@
+c:\Users\WIN10\Desktop\mind-x\mvd\target\debug\deps\libtinytemplate-16663f760a9098f9.rmeta: C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\lib.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\compiler.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\error.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\instruction.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\syntax.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\template.rs
+
+c:\Users\WIN10\Desktop\mind-x\mvd\target\debug\deps\tinytemplate-16663f760a9098f9.d: C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\lib.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\compiler.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\error.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\instruction.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\syntax.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\template.rs
+
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\lib.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\compiler.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\error.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\instruction.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\syntax.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\template.rs:

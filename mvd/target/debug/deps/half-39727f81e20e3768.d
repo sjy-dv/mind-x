@@ -1,0 +1,12 @@
+c:\Users\WIN10\Desktop\mind-x\mvd\target\debug\deps\libhalf-39727f81e20e3768.rmeta: C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\lib.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\bfloat.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\bfloat\convert.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16\arch.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16\arch\x86.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\leading_zeros.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\slice.rs
+
+c:\Users\WIN10\Desktop\mind-x\mvd\target\debug\deps\half-39727f81e20e3768.d: C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\lib.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\bfloat.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\bfloat\convert.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16\arch.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16\arch\x86.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\leading_zeros.rs C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\slice.rs
+
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\lib.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\bfloat.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\bfloat\convert.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16\arch.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\binary16\arch\x86.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\leading_zeros.rs:
+C:\Users\WIN10\.cargo\registry\src\index.crates.io-6f17d22bba15001f\half-2.4.1\src\slice.rs:
