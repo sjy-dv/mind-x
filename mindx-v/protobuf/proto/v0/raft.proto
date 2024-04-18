@@ -1,0 +1,23 @@
+syntax = "proto3";
+package mindxv.v0;
+option go_package="github.com/sjy-dv/mind-x/mindx-v/protobuf;protocol";
+
+import "v0/core.proto";
+
+service RaftTransport {
+	rpc Receive(RaftMessage) returns (EmptyMessage);
+}
+
+message RaftMessage {
+	bytes group_id = 1;
+	bytes message = 2;
+}
+
+message SharedGroupProposal {
+	string proxy_name = 1;
+	bytes data = 2;
+}
+
+message SharedGroupSnapshot {
+	map<string,bytes> proxy_snapshots = 1;
+}

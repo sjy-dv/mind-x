@@ -1,0 +1,30 @@
+syntax = "proto3";
+package mindxv.v0;
+option go_package="github.com/sjy-dv/mind-x/mindx-v/protobuf;protocol";
+
+import "v0/core.proto";
+
+
+service Search {
+	rpc Search(SearchRequest) returns (stream SearchResultItem);
+	rpc SearchPartitions(SearchPartitionsRequest) returns (stream SearchResultItem);
+}
+
+message SearchRequest {
+	bytes dataset_id = 1;
+	repeated float query = 2;
+	uint32 k = 3;
+}
+
+message SearchPartitionsRequest {
+	bytes dataset_id = 1;
+	repeated bytes partition_ids = 2;
+	repeated float query = 3;
+	uint32 k = 4;
+}
+
+message SearchResultItem {
+	bytes id = 1;
+	map<string,string> metadata = 2;
+	float score = 3;
+}

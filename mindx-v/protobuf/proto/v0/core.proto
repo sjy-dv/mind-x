@@ -1,0 +1,9 @@
+syntax = "proto3";
+package mindxv.v0;
+option go_package="github.com/sjy-dv/mind-x/mindx-v/protobuf;protocol";
+
+message EmptyMessage {}
+
+message UUIDRequest {
+	bytes id = 1;
+}
