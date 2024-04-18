@@ -10,3 +10,7 @@
 - I needed a lightweight vector database that can operate in edge environments. Why?
 
 ![w3](../imgs/w3.png)
+
+- I've decided to change my plan. why?
+
+![w4](../imgs/w4.png)
