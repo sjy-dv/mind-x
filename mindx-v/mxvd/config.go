@@ -12,7 +12,7 @@ type Config struct {
 
 func NewConfig() *Config {
 	return &Config{
-		Port:             "6000",
+		Port:             "50003",
 		DataDir:          "/personal_data",
 		DoNotJoinCluster: false,
 	}

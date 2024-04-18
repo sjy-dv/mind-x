@@ -15,7 +15,7 @@ func main() {
 
 	config := mxvd.NewConfig()
 	flag.Uint64Var(&config.RaftNodeId, "node-id", 0, "Raft node ID")
-	flag.StringVar(&config.Port, "port", operating.GetenvDefault("MXVD_PORT", "6000"), "Node port")
+	flag.StringVar(&config.Port, "port", operating.GetenvDefault("MXVD_PORT", "50003"), "Node port")
 	flag.StringVar(&joinNodesRaw, "join", operating.GetenvDefault("MXVD_JOIN", ""), "Comma separated list of existing cluster nodes")
 	flag.StringVar(&config.DataDir, "data-dir", operating.GetenvDefault("MXVD_DATA_DIR", "/tmp"), "Data directory")
 	flag.StringVar(&config.TlsCertFile, "cert", operating.GetenvDefault("MXVD_CERT", ""), "TLS Certificate file")

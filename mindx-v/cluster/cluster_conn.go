@@ -58,7 +58,7 @@ func NewConn(id uint64, address string, tlsCertFile string) (*Conn, error) {
 
 	if tlsCertFile != "" {
 		var err error
-		c.transportCredentials, err = credentials.NewClientTLSFromFile(tlsCertFile, "anndb-server")
+		c.transportCredentials, err = credentials.NewClientTLSFromFile(tlsCertFile, "mxvd-server")
 		if err != nil {
 			return nil, err
 		}

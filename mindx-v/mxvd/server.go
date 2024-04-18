@@ -70,7 +70,7 @@ func (this *Server) JoinCluster() error {
 func (this *Server) setup() error {
 	var err error
 
-	this.db, err = badger.Open(badger.LSMOnlyOptions(path.Join(this.config.DataDir, "anndb")).WithLogger(log.New()))
+	this.db, err = badger.Open(badger.LSMOnlyOptions(path.Join(this.config.DataDir, "mxvd")).WithLogger(log.New()))
 	if err != nil {
 		return err
 	}
