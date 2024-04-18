@@ -10,6 +10,7 @@ import (
 	"sync/atomic"
 
 	"github.com/sjy-dv/mind-x/mindx-v/math"
+	"github.com/sjy-dv/mind-x/mindx-v/operating"
 	pb "github.com/sjy-dv/mind-x/mindx-v/protobuf/protocol/v0"
 	"github.com/sjy-dv/mind-x/mindx-v/storage/raft"
 
@@ -443,7 +444,7 @@ func (this *Dataset) getPartitionForId(id uuid.UUID) *partition {
 	this.partitionsMu.RLock()
 	defer this.partitionsMu.RUnlock()
 
-	return this.partitions[utils.UuidMod(id, uint64(this.Meta().GetPartitionCount()))]
+	return this.partitions[operating.UuidMod(id, uint64(this.Meta().GetPartitionCount()))]
 }
 
 func (this *Dataset) checkDimension(value *math.Vector) error {

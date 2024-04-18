@@ -11,6 +11,7 @@ import (
 	badger "github.com/dgraph-io/badger/v2"
 	uuid "github.com/satori/go.uuid"
 	log "github.com/sirupsen/logrus"
+	"github.com/sjy-dv/mind-x/mindx-v/index/space"
 	"github.com/sjy-dv/mind-x/mindx-v/math"
 	"github.com/sjy-dv/mind-x/mindx-v/operating"
 	pb "github.com/sjy-dv/mind-x/mindx-v/protobuf/protocol/v0"
@@ -67,7 +68,7 @@ func newPartition(id uuid.UUID, meta *pb.Partition, dataset *Dataset, raftWalDB 
 		raftTransport:  raftTransport,
 		datasetManager: datasetManager,
 		raftMu:         &sync.RWMutex{},
-		notificator:    utils.NewNotificator(),
+		notificator:    operating.NewNotificator(),
 		log: log.WithFields(log.Fields{
 			"dataset_id":   dataset.id,
 			"partition_id": id,

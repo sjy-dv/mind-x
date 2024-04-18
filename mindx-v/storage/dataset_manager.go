@@ -25,7 +25,7 @@ type DatasetManager struct {
 	datasets   map[uuid.UUID]*Dataset
 	datasetsMu *sync.RWMutex
 
-	notificator *utils.Notificator
+	notificator *operating.Notificator
 }
 
 func NewDatasetManager(raft raft.Group, raftWalDB *badger.DB, raftTransport *raft.RaftTransport, clusterConn *cluster.Conn, allocator *Allocator) (*DatasetManager, error) {
