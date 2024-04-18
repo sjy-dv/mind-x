@@ -7,6 +7,8 @@ import (
 	"path"
 	"time"
 
+	_ "google.golang.org/grpc/encoding/gzip"
+
 	badger "github.com/dgraph-io/badger/v2"
 	uuid "github.com/satori/go.uuid"
 	log "github.com/sirupsen/logrus"
