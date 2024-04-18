@@ -2,6 +2,7 @@ package storage
 
 import (
 	"context"
+	"errors"
 	"sync"
 	"time"
 
@@ -13,6 +14,11 @@ import (
 	pb "github.com/sjy-dv/mind-x/mindx-v/protobuf/protocol/v0"
 	"github.com/sjy-dv/mind-x/mindx-v/storage/raft"
 	"google.golang.org/protobuf/proto"
+)
+
+var (
+	DatasetNotFoundErr      error = errors.New("Dataset not found")
+	DatasetAlreadyExistsErr error = errors.New("Dataset already exists")
 )
 
 type DatasetManager struct {

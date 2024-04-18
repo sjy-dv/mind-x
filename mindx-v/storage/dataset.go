@@ -9,6 +9,7 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/sjy-dv/mind-x/mindx-v/index"
 	"github.com/sjy-dv/mind-x/mindx-v/math"
 	"github.com/sjy-dv/mind-x/mindx-v/operating"
 	pb "github.com/sjy-dv/mind-x/mindx-v/protobuf/protocol/v0"

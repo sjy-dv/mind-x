@@ -11,6 +11,7 @@ import (
 	badger "github.com/dgraph-io/badger/v2"
 	uuid "github.com/satori/go.uuid"
 	log "github.com/sirupsen/logrus"
+	"github.com/sjy-dv/mind-x/mindx-v/index"
 	"github.com/sjy-dv/mind-x/mindx-v/index/space"
 	"github.com/sjy-dv/mind-x/mindx-v/math"
 	"github.com/sjy-dv/mind-x/mindx-v/operating"
