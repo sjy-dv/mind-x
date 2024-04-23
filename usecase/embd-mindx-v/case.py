@@ -16,7 +16,7 @@ model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniL
 
 def sentence_embd(s):
     embedding = model.encode([s])[0].astype(np.float32)
-    print("Embedding:", embedding)  # 디버깅 목적으로 인코딩 결과 출력
+    print("Embedding:", embedding)  
     return embedding.tolist()
 
 def main():

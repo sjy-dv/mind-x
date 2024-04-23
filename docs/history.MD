@@ -17,3 +17,7 @@
 
 ![w5](../imgs/w5.png)
 ![w6](../imgs/w6.png)
+
+## Processor Init
+
+![w7](../imgs/w7.png)
