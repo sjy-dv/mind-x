@@ -83,7 +83,7 @@ func (wss *WebSocketServer) personalpipe(w http.ResponseWriter, r *http.Request)
 		log.Fatal(err)
 		return
 	}
-	go wss.Pipe(ws)
+	go wss.mindXpipe(ws)
 }
 
 func (wss *WebSocketServer) sendErrorMessage(ws *websocket.Conn, errMsg string, originalErr error) error {

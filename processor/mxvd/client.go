@@ -7,7 +7,8 @@ import (
 )
 
 type MXVDProxy struct {
-	Conn *grpc.ClientConn
+	Conn       *grpc.ClientConn
+	PersonalID []byte
 }
 
 func InitMXVD() (*MXVDProxy, error) {
@@ -22,6 +23,10 @@ func InitMXVD() (*MXVDProxy, error) {
 	return proxy, nil
 }
 
+func (mxvd *MXVDProxy) ConfigID(id []byte) {
+	mxvd.PersonalID = id
+}
+
 func (mxvd *MXVDProxy) datasetManager() pbV0.DatasetManagerClient {
 	return pbV0.NewDatasetManagerClient(mxvd.Conn)
 }
@@ -30,6 +35,6 @@ func (mxvd *MXVDProxy) dataManager() pbV0.DataManagerClient {
 	return pbV0.NewDataManagerClient(mxvd.Conn)
 }
 
-func (mxvd *MXVDProxy) searchManager() pbV0.SearchClient {
+func (mxvd *MXVDProxy) SearchManager() pbV0.SearchClient {
 	return pbV0.NewSearchClient(mxvd.Conn)
 }

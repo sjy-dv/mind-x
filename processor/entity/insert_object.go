@@ -1,7 +1,7 @@
 package entity
 
 type InsertObject struct {
-	ID       string
+	ID       []byte
 	Vector   []float32
 	Metadata map[string]string
 }

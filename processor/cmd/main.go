@@ -7,6 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/sjy-dv/mind-x/processor/embeddings"
 	"github.com/sjy-dv/mind-x/processor/mxvd"
 	"github.com/sjy-dv/mind-x/processor/transformers"
 	"github.com/sjy-dv/mind-x/processor/transport"
@@ -16,6 +17,10 @@ func main() {
 
 	dbID := ""
 	vdb, err := mxvd.InitMXVD()
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = embeddings.InitEmbeddings()
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -35,6 +40,7 @@ func main() {
 		log.Fatal("LoadDB Fatal Error ", err)
 	}
 	log.Println(status.Id, status.Size, status.Dimension)
+	vdb.ConfigID([]byte(dbID))
 	//load llm
 	llama3, err := transformers.LoadLLAMA3()
 	if err != nil {
