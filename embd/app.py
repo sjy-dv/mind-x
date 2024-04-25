@@ -9,7 +9,7 @@ async def handle_sentence(websocket, path):
         print(f"Received: {message}")
         data = json.loads(message)['sentence']
         embedding = model.encode(data)
-        await websocket.send(embedding[0])
+        await websocket.send(json.dumps(embedding.tolist()))
 
 async def main():
     async with websockets.serve(handle_sentence, "localhost", 8765):
