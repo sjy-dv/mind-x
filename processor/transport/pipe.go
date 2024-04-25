@@ -132,6 +132,9 @@ func (wss *WebSocketServer) mindXpipe(ws *websocket.Conn) {
 						}
 					}
 				}
+				dialogQueue <- DialQueue{
+					bk: false,
+				}
 			}()
 
 			next := <-dialogQueue

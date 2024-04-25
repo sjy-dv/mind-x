@@ -65,6 +65,7 @@ type DialQueue struct {
 func (wss *WebSocketServer) Run(llm *ollama.LLM, vdb *mxvd.MXVDProxy) {
 	wss.llama3 = llm
 	wss.mxvd = vdb
+	http.HandleFunc("/chat", wss.personalpipe)
 	server := &http.Server{
 		Addr:         ":3001",
 		WriteTimeout: 15 * time.Second,
