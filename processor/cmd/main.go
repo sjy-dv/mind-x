@@ -4,11 +4,16 @@ import (
 	"context"
 	"log"
 	"os"
+	"os/signal"
+	"syscall"
 
 	"github.com/sjy-dv/mind-x/processor/mxvd"
+	"github.com/sjy-dv/mind-x/processor/transformers"
+	"github.com/sjy-dv/mind-x/processor/transport"
 )
 
 func main() {
+
 	dbID := ""
 	vdb, err := mxvd.InitMXVD()
 	if err != nil {
@@ -30,6 +35,16 @@ func main() {
 		log.Fatal("LoadDB Fatal Error ", err)
 	}
 	log.Println(status.Id, status.Size, status.Dimension)
+	//load llm
+	llama3, err := transformers.LoadLLAMA3()
+	if err != nil {
+		log.Fatal("LoadLLM Fatal Error ", err)
+	}
+	go transport.NewSocketServer().Run(llama3, vdb)
+	signals := make(chan os.Signal, 1)
+	signal.Notify(signals, syscall.SIGINT, syscall.SIGTERM)
+	sig := <-signals
+	log.Printf("Received signal: %s. Shutting down...\n", sig)
 }
 
 func bootPersonal(vdb *mxvd.MXVDProxy) string {

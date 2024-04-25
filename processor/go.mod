@@ -3,6 +3,7 @@ module github.com/sjy-dv/mind-x/processor
 go 1.22.2
 
 require (
+	github.com/gorilla/websocket v1.5.1
 	github.com/tmc/langchaingo v0.1.9
 	google.golang.org/grpc v1.62.0
 	google.golang.org/protobuf v1.32.0
