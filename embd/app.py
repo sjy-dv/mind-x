@@ -2,6 +2,7 @@ import asyncio
 import websockets
 import json
 from sentence_transformers import SentenceTransformer
+
 model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
 
 async def handle_sentence(websocket, path):
@@ -12,9 +13,9 @@ async def handle_sentence(websocket, path):
         await websocket.send(json.dumps(embedding.tolist()))
 
 async def main():
-    async with websockets.serve(handle_sentence, "localhost", 8765):
+    async with websockets.serve(handle_sentence, "localhost", 8765, ping_timeout=None, close_timeout=None):
         print("Server started")
-        await asyncio.Future() 
+        await asyncio.Future()  
 
 if __name__ == "__main__":
     asyncio.run(main())
