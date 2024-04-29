@@ -3,3 +3,6 @@ grpcio-tools==1.62.0
 sentence-transformers==2.7.0
 flake8==7.0.0
 websockets==12.0
+torch==2.2.2
+torchvision==0.18.0
+pillow==9.3.0
