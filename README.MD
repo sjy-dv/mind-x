@@ -42,6 +42,8 @@ cd sample_client & npm start
 
 ## Demo
 
+### TextVector Demo & Real-Time RAG with LLM
+
 ![demo1](./imgs/q1.png)
 Initially, the assistant knows nothing about the user.
 ![demo2](./imgs/q2.png)
@@ -50,6 +52,26 @@ However, users can teach the assistant about themselves in real-time.
 (Due to the characteristics of LLM, it could be misunderstood that it was remembered as a conversation chain rather than learning, so it was done after refreshing.) The learned data was immediately reflected, and this can be seen as the assistant's first personalization.
 
 All these features of the project can be supported locally without the need for external cloud integration or an internet connection.
+
+### ImageVector Demo & Anomaly
+
+#### Training Data (Very Small. Only Test)
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="./usecase/dataset/good.png" alt="Good Image" style="width: 50%;">
+  <img src="./usecase/dataset/bad.png" alt="Bad Image" style="width: 50%;">
+</div>
+
+#### Test Data
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="./usecase/test_data/good.png" alt="Good Image" style="width: 50%;">
+  <img src="./usecase/test_data/bad.png" alt="Bad Image" style="width: 50%;">
+</div>
+
+![result](./usecase/anomaly_result.png)
+
+#### Result
 
 ## Contact
 
