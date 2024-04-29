@@ -69,9 +69,37 @@ All these features of the project can be supported locally without the need for 
   <img src="./usecase/test_data/bad.png" alt="Bad Image" style="width: 50%;">
 </div>
 
-![result](./usecase/anomaly_result.png)
+#### Test Code
+
+```python
+ query = protobuf.search_pb2.SearchRequest(
+            dataset_id=dataset_id,
+            query=get_image_embedding("./test_data/bad.png"),
+            k=1
+        )
+        results = search.Search(query)
+        try:
+            for result in results:
+                print("Search result:", result.id, result.metadata, result.score)
+        except grpc.RpcError as e:
+            print("Search failed:", e)
+        query = protobuf.search_pb2.SearchRequest(
+            dataset_id=dataset_id,
+            query=get_image_embedding("./test_data/good.png"),
+            k=1
+        )
+        results = search.Search(query)
+        try:
+            for result in results:
+                print("Search result:", result.id, result.metadata, result.score)
+        except grpc.RpcError as e:
+            print("Search failed:", e)
+
+```
 
 #### Result
+
+![result](./usecase/anomaly_result.png)
 
 ## Contact
 
