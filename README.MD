@@ -1,6 +1,6 @@
 # MIND-X
 
-![logo](./imgs/logo.png)
+![logo](./imgs/nlogo.png)
 
 ## Mind-X is the fastest growing Smart CloneAI that understands 'me' in real time.
 
