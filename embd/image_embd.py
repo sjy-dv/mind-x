@@ -3,6 +3,7 @@ import torchvision.models as models
 import torchvision.transforms as transforms
 from PIL import Image
 from torch.nn.functional import cosine_similarity
+import numpy as np
 
 model = models.resnet18(pretrained=True)
 model.eval()
@@ -19,9 +20,8 @@ def get_image_embedding(image_path):
     image = preprocess(image).unsqueeze(0)  
     with torch.no_grad():
         embedding = model(image)
-    return embedding
-
-embedding = get_image_embedding('../imgs/logo.png')
-print(embedding)
+    return embedding.cpu().numpy().flatten().astype(np.float32)
+embedding = get_image_embedding('../imgs/w1.png')
+print(len(embedding))
 
 
